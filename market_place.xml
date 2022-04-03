@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>reg new user</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Пустое поле E-mail</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>при регистрации оставляю поле ввода E-mail пустым</content><expected>Выходит сообщение о незаполненном поле email</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>E-mail в нижнем регистре</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail: senj@enj.ru в нижнем регистре</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>E-mail в верхнем регистре</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>при регистрации ввожу E-mail OKDRN@ENJX.RU в верхнем регистре</content><expected>Операция проходит успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>E-mail с цифрами в имени аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail dj848@73.ru с цифрами в имени и домене аккаунта</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>E-mail с цифрами в доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail dj848@73.ru с цифрами в доменной части</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>E-mail c дефисом в имени аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail d--d@s--d.ru с дефисом в имени аккаунта</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>E-mail c дефисом в доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail d--d@s--d.ru c дефисом в доменной части</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>E-mail со знаком подчеркивания в имени аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail d__d@d__.ru со знаком подчеркивания в имени аккаунта</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>E-mail cо знаком подчеркивания в доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail d__d@d__.ru cо знаком подчеркивания в доменной части</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>E-mail c точками в имени аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail dd..ed@dn.ru c точками в имени аккаунта</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>E-mail с несколькими точками в доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail dju@d..ddn.ru с несколькими точками в доменной части</content><expected>Операция проводится успешно</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>E-mail без точек в доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail djl@dnjdj без точек в доменной части</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Превышение длины E-mail</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddjl@dnjdj.ru
+</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Отсутствие @ в E-mail</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу  E-mail ddfgcci.djen.ru без символа @</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>E-mail с пробелами в имени аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail dbeh dndnej@dbe.ru с пробелами в имени аккаунта</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>E-mail с пробелами в доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>E-mail с пробелами в доменной части</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>E-mail без имени аккаунта</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail @dnj.ru без имени аккаунта</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>E-mail без доменной части</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail denej@.ru без доменной части</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Некорректный домен первого уровня</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<preconds>Некорректный домен первого уровня (допустимо 2-63 букв после точки: .ru или например .americanexpress) </preconds>
+										<steps_separated><step>
+<index>1</index><content>При регистрации ввожу E-mail denej@dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.ru с превышением количества букв - 68</content><expected>Должно появится сообщение о неправильном или некорректном e-mail введеном в поле</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
